@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: flight-config-db
+    environment:
+      POSTGRES_DB: flight_config_db
+      POSTGRES_USER: flight_user
+      POSTGRES_PASSWORD: flight_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
