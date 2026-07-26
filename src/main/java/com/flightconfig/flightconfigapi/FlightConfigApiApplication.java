@@ -1,4 +1,4 @@
-package com.flightconfig.flight_config_api;
+package com.flightconfig.flightconfigapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
